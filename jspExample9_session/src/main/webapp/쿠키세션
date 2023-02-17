@@ -1,0 +1,38 @@
+
+# Application Design
+----------------------------------------------------------------------------
+		cookie			=		session				description
+----------------------------------------------------------------------------
+1. joinMember			=		joinMember			회원가입
+2. joinMemberPro 		=		joinMemberPro		회원가입 처리
+3. cookieLogin			=		sessionLogin		로그인 화면 구현
+4. cookieLoginPro		=		sessionLoginPro 	로그인 처리
+5. cookieMain			=		sessionMain			로그인에 대한 ID, PWD 체크
+6. cookieLogout			=		session	Logout		로그아웃 처리
+7. logonDBBean.java : DTO(jsp:useBean.....)
+8. logonDataBean.java : DB Connection + DAO 
+
+9. Data Source Explorer를 이용하여 DB Connection Configuration
+
+// Oracle
+create table member (
+	id varchar2(12) primary key,
+	passwd varchar2(12) not null,
+	name varchar2(20),
+	reg_date timestamp
+);
+
+insert into member values('heo','1234','허장욱',sysdate);
+
+// MySQL
+create table member (
+	id varchar(12) primary key,
+	passwd varchar(12) not null,
+	name varchar(20),
+	reg_date timestamp
+);
+
+insert into member values('heo','1234','허장욱',sysdate());
+
+select * from member;
+commit;

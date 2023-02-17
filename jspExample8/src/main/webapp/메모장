@@ -1,0 +1,10 @@
+애플리케이션 설계
+주제: 고객 정보를 이용하여 입력, 수정, 삭제, 조회(출력)
+- 화면 구현: 데이터 입력 부분: customer.jsp
+- 값을 받아서 처리하는 부분: customerDTO.java 또는 customerVO.java
+  Data Transfer Object => java, jsp
+  Value Object => springFramework
+  
+- 출력하는 부분: customer.jsp
+- DB연동 부분: customerDAO.java => ojdbc6.jar
+  Data Access Object => 데이터의 흐름 처리(insert, select, update, delete ...)
