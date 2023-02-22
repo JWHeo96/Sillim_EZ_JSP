@@ -27,8 +27,13 @@
 	
 			session.setAttribute("id", id);
 			session.setMaxInactiveInterval(60 * 20);
-		
-			response.sendRedirect("Main.jsp");
+	%>
+		<script type="text/javascript">
+			var strid = "<%=session.getAttribute("id") %>";
+			alert(strid + '님 환영합니다!!!');
+			location.href="Main.jsp";
+		</script>
+	<%
 		} else {
 	%>
 		<script type="text/javascript">

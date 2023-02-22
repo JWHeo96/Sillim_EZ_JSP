@@ -15,10 +15,6 @@
 		margin: 30px;
 	}
 </style>
-	<script type="text/javascript">
-			var strid = "<%=session.getAttribute("id") %>";
-			alert(strid + "님 환영합니다!!!");
-	</script>	
 <body>
 	<div align="right">
 		<b style="font-size:15px; color:blue;"><%=session.getAttribute("id") %> 님</b><br>

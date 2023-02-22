@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>memberUpdatePro</title>
+<title>memberDeletePro</title>
 </head>
 <body>
 	<jsp:useBean id="mBean" class="kr.co.ezen.memberBean">
@@ -24,13 +24,15 @@
 		String pass = mDao.getPassword(id);
 		
 		if(pass.equals(password)){
-			mDao.updateMember(mBean);
-		%>
-		
-		
+	
+			session.setAttribute("id", id);
+			session.setAttribute("password", password);
+			session.setMaxInactiveInterval(60 * 20);
+	%>
 		<script type="text/javascript">
-			alert('회원수정 완료!!!');
-			location.href="memberList.jsp";
+			var strid = "<%=session.getAttribute("id") %>";
+			alert(strid + '님 환영합니다!!!');
+			location.href="Main.jsp";
 		</script>
 	<%
 		} else {
