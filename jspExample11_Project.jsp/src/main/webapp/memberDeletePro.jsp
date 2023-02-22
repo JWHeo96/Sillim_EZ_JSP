@@ -24,11 +24,9 @@
 		String pass = mDao.getPassword(id);
 		
 		if(pass.equals(password)){
-	
-			session.setAttribute("id", id);
-			session.setMaxInactiveInterval(60 * 20);
-		
-			response.sendRedirect("Main.jsp");
+			mDao.deleteMember(mBean);
+			
+			response.sendRedirect("memberList.jsp");
 		} else {
 	%>
 		<script type="text/javascript">

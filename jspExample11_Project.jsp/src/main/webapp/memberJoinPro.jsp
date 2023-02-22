@@ -1,13 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" errorPage="login.jsp"%>
 <%@ page import="java.sql.*" %>
+<%@ page import="kr.co.ezen.memberDAO" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>회원가입 처리 - memberJoinPro</title>
 </head>
-<body>
+<body style="background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;background-repeat:no-repeat;">
 	<%
 		request.setCharacterEncoding("utf-8");
 		String id = request.getParameter("id");	// ${param.id}
@@ -24,7 +28,7 @@
 		<jsp:setProperty property="*" name="mBean"/>
 	</jsp:useBean>
 	
-	<%
+	<% 
 		String hobby[] = request.getParameterValues("hobby");
 		String texthobby = "";
 		for(int i=0; i<hobby.length; i++){
@@ -32,33 +36,16 @@
 		}
 		mBean.setHobby(texthobby);
 		
-		String dbId ="heo";
-		String dbPass = "1234";
-		String dbUrl = "jdbc:oracle:thin:@localhost:1521:xe";
-		String dbDriver = "oracle.jdbc.OracleDriver";
+		// 데이터베이스 연결 객체 생성
+		memberDAO mDao = new memberDAO();
+		// DATA Input
+		mDao.insertMember(mBean);
 		
-		try {
-			Class.forName(dbDriver);
-			Connection conn = DriverManager.getConnection(dbUrl,dbId,dbPass);
-			
-			String sql = "insert into campingmember values(?,?,?,?,?,?,?,?,?,?)";
-
-			PreparedStatement pstmt = conn.prepareStatement(sql);
-				pstmt.setString(1,mBean.getId());
-				pstmt.setString(2,mBean.getPass1());
-				pstmt.setString(3,mBean.getPass2());
-				pstmt.setString(4,mBean.getName());
-				pstmt.setString(5,mBean.getEmail());
-				pstmt.setString(6,mBean.getTel());
-				pstmt.setString(7,mBean.getHobby());
-				pstmt.setString(8,mBean.getJob());
-				pstmt.setString(9,mBean.getAge());
-				pstmt.setString(10,mBean.getInfo());
-			pstmt.executeUpdate();
-		} catch (Exception e){
-			e.printStackTrace();
-		} 
+		// 회원목록 페이지로 이동하기
+		response.sendRedirect("memberList.jsp");
 	%>
+	
+	
 	<h2 align="center">회원 정보 보기</h2>
 	<table align=center border="1" style="width:600;">
 		<tr height="40" align="center">
@@ -98,6 +85,12 @@
 			<td width="150">기타사항</td>
 			<td width="350"> <%=mBean.getInfo() %></td>
 		</tr>
+		<tr>
+			<td colspan="9" align="center">
+				<button type="button" onclick="location.href='memberJoinForm.jsp'">회원가입 페이지 이동</button>
+			</td>
+		</tr>
 	</table>
+	
 </body>
 </html>

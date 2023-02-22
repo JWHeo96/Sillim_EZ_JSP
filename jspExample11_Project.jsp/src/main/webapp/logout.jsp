@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원정보 상세보기</title>
+<title>logout</title>
 </head>
 <body>
-	<h2 align="center">회원 정보 상세 보기</h2>
+	<%
+		session.removeAttribute("id");
+		session.invalidate();
+		response.sendRedirect("login.jsp");
+	%>
 </body>
 </html>
