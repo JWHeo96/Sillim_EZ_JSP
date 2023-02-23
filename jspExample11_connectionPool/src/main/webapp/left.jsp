@@ -7,32 +7,39 @@
 <title>서브 메뉴 - left</title>
 </head>
 <body>
-	<table width="1000" bordercolor="green">
+	<table style="height:500px;">
 		<tr height="50">
-			<td width="150">
-				<font size="5" color="white">
-					<a href="Main.jsp?center=kovea.jsp" style="text-decoration:none;">코베아</a>
+			<td width="250" >
+				<font size="3" color="white">
+					<a href="Main.jsp?center=kovea.jsp" style="color:white; text-decoration:none;">코베아</a>
 				</font>
 			</td>
 		</tr>
 		<tr height="50">
-			<td width="150">
-				<font size="5" color="white">
-					<a href="Main.jsp?center=snowpeak.jsp" style="text-decoration:none;">스노우피크</a>
+			<td>
+				<font size="3" color="white">
+					<a href="Main.jsp?center=snowpeak.jsp" style="color:white; text-decoration:none;">스노우피크</a>
 				</font>
 			</td>
 		</tr>
 		<tr height="50">
-			<td width="150">
-				<font size="5" color="white">
-					<a href="Main.jsp?center=jeep.jsp" style="text-decoration:none;">지프</a>
+			<td>
+				<font size="3" color="white">
+					<a href="Main.jsp?center=jeep.jsp" style="color:white; text-decoration:none;">지프</a>
 				</font>
 			</td>
 		</tr>
 		<tr height="50">
-			<td width="150">
-				<font size="5" color="white">
-					<a href="Main.jsp?center=colman.jsp" style="text-decoration:none;">콜맨</a>
+			<td>
+				<font size="3" color="white">
+					<a href="Main.jsp?center=colman.jsp" style="color:white; text-decoration:none;">콜맨</a>
+				</font>
+			</td>
+		</tr>
+		<tr height="50">
+			<td >
+				<font size="3" color="white">
+					<a href="Main.jsp?center=memberList.jsp" style="color:white; text-decoration:none;">회원정보 관리</a>
 				</font>
 			</td>
 		</tr>

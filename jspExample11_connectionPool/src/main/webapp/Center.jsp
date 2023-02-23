@@ -7,10 +7,11 @@
 <title>Center</title>
 </head>
 <body>
-	<table width="1000" bordercolor="green">
-		<tr height="100">
+	<table style="width:100%; height:500px;">
+		<tr>
 			<td colspan="2" align="center">
-				<img src="./img/kovea.jpg" width="600" height="360" alt="코베아로고">
+       <iframe width="750" height="450" src="https://www.youtube.com/embed/jUmeh5yvy0M?autoplay=1&mute=1&loop=1&playlist=jUmeh5yvy0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 			</td>
 		</tr>
 	</table>

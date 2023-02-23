@@ -8,26 +8,26 @@
 </head>
 <body>
 
-	<table width="1000">
-		<tr>
-			<td align="center" width="150">
+	<table width="1000" bordercolor="green">
+		<tr align="center">
+			<td align="center" width="250">
 				<font size="3px" color="white">
-					<a href="Main.jsp?email.jsp" style="text-decoration:none">이메일 무단 수집거부</a>
+					<a href="Main.jsp?center=email.jsp" style="text-decoration:none; color:red;">이메일무단수집거부</a>
 				</font>&nbsp;&nbsp;&nbsp;
 			</td>
-			<td align="center" width="150">
+			<td align="center" width="250">
 				<font size="3px" color="white">
-					<a href="Main.jsp?chair.jsp" style="text-decoration:none">소비자 이용약관</a>
+					<a href="Main.jsp?center=customer.jsp" style="text-decoration:none; color:red;">개인정보처리방침</a>
 				</font>&nbsp;&nbsp;&nbsp;
 			</td>
-			<td align="center" width="150">
+			<td align="center" width="250">
 				<font size="3px" color="white">
-					<a href="Main.jsp?sitemap.jsp" style="text-decoration:none">사이트맵</a>
+					<a href="Main.jsp?center=sitemap.jsp" style="text-decoration:none; color:red;">사이트맵</a>
 				</font>&nbsp;&nbsp;&nbsp;
 			</td>
-			<td align="center" width="150">
+			<td align="center" width="250">
 				<font size="3px" color="white">
-					<a href="Main.jsp?sitemap.jsp" style="text-decoration:none">사이트맵</a>
+					<a href="Main.jsp?center=support.jsp" style="text-decoration:none; color:red;">저작권정책</a>
 				</font>&nbsp;&nbsp;&nbsp;
 			</td>
 		</tr>
@@ -42,8 +42,5 @@
 			</td>
 		</tr>
 	</table>
-	
-
-
 </body>
 </html>

@@ -9,10 +9,7 @@
 <meta charset="UTF-8">
 <title>회원목록 페이지</title>
 </head>
-<body style="background: #FFEFBA;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-;background-repeat:no-repeat;">
+<body style="background:black;">
 	<%
 		// 데이터베이스 연결 객체 생성
 		memberDAO mDao = new memberDAO();
@@ -41,7 +38,7 @@ background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Fir
 				memberBean mBean = vec.get(i);
 		%>
 		<tr height="30" align="center" style="background:aliceblue;">
-			<td align="center"><a href="memberDetail.jsp?id=<%=mBean.getId() %>" style="color:red; text-decoration:none;"><%=mBean.getId() %></a></td>
+			<td align="center"><a href="Main.jsp?center=memberDetail.jsp?id=<%=mBean.getId() %>" style="color:red; text-decoration:none;"><%=mBean.getId() %></a></td>
 			<td align="center"><%=mBean.getName() %></td>
 			<td align="center"><%=mBean.getEmail() %></td>
 			<td align="center"><%=mBean.getTel() %></td>
@@ -56,7 +53,6 @@ background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Fir
 	</table>
 	<br>
 	<div align="center">
-		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='memberJoinForm.jsp'"><b style="color:white">회원가입</b></button>
 		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='Main.jsp'"><b style="color:white">홈으로</b></button>
 	</div>
 </body>

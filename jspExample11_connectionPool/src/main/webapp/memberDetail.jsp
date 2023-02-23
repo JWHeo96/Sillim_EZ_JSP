@@ -8,10 +8,7 @@
 <meta charset="UTF-8">
 <title>회원정보 상세보기 화면 구현</title>
 </head>
-<body style="background: #FFEFBA;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-;background-repeat:no-repeat;">
+<body style="background:black;">
 	<%
 		String id = request.getParameter("id");	
 	
@@ -59,10 +56,9 @@ background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Fir
 	</table>
 	<br>
 	<div align="center">
-		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='memberUpdate.jsp?id=<%=mBean.getId() %>'"><b style="color:white">수정</b></button>
-		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='memberDelete.jsp?id=<%=mBean.getId() %>'"><b style="color:white">삭제</b></button>	
-		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='memberList.jsp'"><b style="color:white">목록</b></button>
-		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='memberJoinForm.jsp'"><b style="color:white">회원가입</b></button>
+		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='Main.jsp?center=memberUpdate.jsp?id=<%=mBean.getId() %>'"><b style="color:white">수정</b></button>
+		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='Main.jsp?center=memberDelete.jsp?id=<%=mBean.getId() %>'"><b style="color:white">삭제</b></button>	
+		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='Main.jsp?center=memberList.jsp'"><b style="color:white">목록</b></button>
 		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='Main.jsp'"><b style="color:white">홈으로</b></button>
 	</div>
 </body>

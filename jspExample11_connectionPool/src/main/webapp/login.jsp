@@ -16,10 +16,7 @@
 	
 	memberBean mBean = mDao.oneSelectMember(id);
 %>
-<body style="background: #FFEFBA;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-;background-repeat:no-repeat;">
+<body style="background:black;">
 	<h2 align="center" style="color:purple;s">로그인</h2>
 	<form action="loginPro.jsp" method="post">
 		<table align="center" border="1">

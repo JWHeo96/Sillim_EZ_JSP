@@ -28,7 +28,7 @@
 		%>
 		<script type="text/javascript">
 			alert('회원탈퇴 완료!!!');
-			location.href="memberList.jsp";
+			location.href="Main.jsp?center=memberList.jsp";
 		</script>
 		<%
 		} else {

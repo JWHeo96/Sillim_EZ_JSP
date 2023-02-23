@@ -17,13 +17,13 @@
 	<table width="1000" border="1" bordercolor="green">
 		<tr height="100">
 			<td colspan="2" align="center">
-				<img src="./img/ezen.jpg"  alt="" height="60">
+				<img src="./img/ezen.jpg"  alt="" height="60" onclick="location.href='Main.jsp'" />
 			</td>
 			<td colspan="4" align="center">
-				<font size="18px">이젠 낭만 캠프</font>
+				<font size="18px" color="white">이젠 낭만 캠프</font>
 			</td>
-			<td align="center" width="200">
-				<%=id %>님 반갑습니다.
+			<td align="center" width="200" rowspan="2">
+				<b style="color:white;"><%=id %>님 반갑습니다.</b>
 
 			<%
 				if(id.equals("GUEST")){
@@ -39,30 +39,30 @@
 			</td>
 		</tr>	
 	<!--  header상 위의 메뉴 선택하기 -->
-		<tr>
+		<tr height="50px">
 			<td>
-				<font size="5" color="white">
-					<a href="Main.jsp?center=tent.jsp" style="text-decoration:none;">텐트</a>
+				<font size="4" color="white">
+					<a href="Main.jsp?center=tent.jsp" style="color:white; text-decoration:none;">텐트</a>
 				</font>
 			</td>
 			<td>
-				<font size="5" color="white">
-					<a href="Main.jsp?center=.sleep.jsp" style="text-decoration:none;">침낭</a>
+				<font size="4" color="white">
+					<a href="Main.jsp?center=sleep.jsp" style="color:white; text-decoration:none;">침낭</a>
 				</font>
 			</td>
 			<td>
-				<font size="5" color="white">
-					<a href="Main.jsp?center=chair.jsp" style="text-decoration:none;">의자</a>
+				<font size="4" color="white">
+					<a href="Main.jsp?center=chair.jsp" style="color:white; text-decoration:none;">의자</a>
 				</font>
 			</td>
 			<td>
-				<font size="5" color="white">
-					<a href="Main.jsp?center=table.jsp" style="text-decoration:none;">테이블</a>
+				<font size="4" color="white">
+					<a href="Main.jsp?center=table.jsp" style="color:white; text-decoration:none;">테이블</a>
 				</font>
 			</td>
 			<td>
-				<font size="5" color="white">
-					<a href="Main.jsp?center=burner.jsp" style="text-decoration:none;">버너</a>
+				<font size="4" color="white">
+					<a href="Main.jsp?center=burner.jsp" style="color:white; text-decoration:none;">버너</a>
 				</font>
 			</td>
 		</tr>	

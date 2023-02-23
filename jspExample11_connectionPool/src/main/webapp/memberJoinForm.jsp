@@ -103,7 +103,7 @@ background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Fir
 				<td colspan="2" align="center">
 					<input type="submit" value="회원가입" /> &nbsp;&nbsp;
 					<input type="reset" value="취소" onclick="location.href='login.jsp'" /> &nbsp;&nbsp;
-					<input type="button" value="목록" onclick="location.href='memberList.jsp'" />
+					<input type="button" value="목록" onclick="location.href='Main.jsp?center=memberList.jsp'" />
 				</td>
 			</tr>
 		</table>

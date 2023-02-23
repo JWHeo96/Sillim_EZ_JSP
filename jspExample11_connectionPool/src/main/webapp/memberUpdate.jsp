@@ -16,10 +16,7 @@
 	
 	memberBean mBean = mDao.oneSelectMember(id);
 %>
-<body style="background: #FFEFBA;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-;background-repeat:no-repeat;">
+<body style="background:black;">
 	<h2 align="center" style="color:purple;s">회원정보 상세보기 수정 화면</h2>
 	<form action="memberUpdatePro.jsp" method="post">
 		<table align="center" border="1">
@@ -60,8 +57,7 @@ background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Fir
 		<div align="center">
 			<input type="hidden" name="id" value="<%=mBean.getId() %>">
 			<input style="color:white; background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="submit" value="수정" />
-			<input style="color:white; background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='memberJoinForm.jsp'" value="회원가입" />
-			<input style="color:white; background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='memberList.jsp'" value="목록" />
+			<input style="color:white; background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='Main.jsp?center=memberList.jsp'" value="목록" />
 			<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='Main.jsp'"><b style="color:white">홈으로</b></button>
 		</div>
 	</form>
