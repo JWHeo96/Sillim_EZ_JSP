@@ -7,6 +7,6 @@
 <title>콜만</title>
 </head>
 <body>
-	<img src="./img/coleman.png" alt="" width="500" height="300"/>
+	<iframe src="http://coleman.co.kr/shop/main/index1.php#top" width="100%" height="500px"></iframe>
 </body>
 </html>

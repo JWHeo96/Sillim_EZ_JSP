@@ -48,7 +48,7 @@
 			</table><br>
 			<input type="submit" value="글쓰기" />&nbsp;&nbsp;&nbsp;
 			<input type="reset" value="재작성" />&nbsp;&nbsp;&nbsp;
-			<button onclick="location.href='boardList.jsp'">글목록보기</button>
+			<button onclick="location.href='Main.jsp?center=boardList.jsp'">글목록보기</button>
 		</form>
 </body>
 </html>

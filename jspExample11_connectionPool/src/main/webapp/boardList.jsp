@@ -22,28 +22,26 @@
 	%>
 	
 	<h2 align="center" style="color:white;">게시판 목록 데이터 출력</h2>
-	<table align=center border="1" style="width:90%;">
-		<tr height="40" align="center" style="background:pink;">
-			<td width="150">번호</td>
-			<td width="150">제목</td>
-			<td width="150">글쓴이</td>
-			<td width="150">전자우편</td>
-			<td width="150">작성일자</td>
-			<td width="150">조회수</td>
-			<td width="150">내용</td>
+	<table align="center" border="1" style="width:90%;">
+		<tr height="40" align="center" style="background:#ffd700;">
+			<td width="50">번호</td>
+			<td width="300">제목</td>
+			<td width="80">글쓴이</td>
+			<td width="120">작성일자</td>
+			<td width="70">조회수</td>
 		</tr>
 		<%
 			for(int i=0; i < vec.size(); i++){
 				boardBean bBean = vec.get(i);
 		%>
-		<tr height="30" align="center" style="background:aliceblue;">
-			<td align="center"><a href="boardDetail.jsp?num=<%=bBean.getNum() %>" style="color:red; text-decoration:none;"><%=bBean.getNum() %></a></td>
-			<td align="center"><%=bBean.getSubject() %></td>
+		<tr height="30" style="background:aliceblue;">
+			<td align="center"><%=i+1 %></td>
+			<td width="300" align="left"><a href="Main.jsp?center=boardDetail.jsp?num=<%=bBean.getNum() %>" style="color:black; text-decoration:none;"><%if(bBean.getRe_step() > 1){
+				for(int j=0; j<(bBean.getRe_step() -1) * 3;j++){
+			%>&nbsp;<%}}%><%=bBean.getSubject()%></a></td>
 			<td align="center"><%=bBean.getWriter() %></td>
-			<td align="center"><%=bBean.getEmail() %></td>
 			<td align="center"><%=bBean.getReg_date() %></td>
 			<td align="center"><%=bBean.getReadCount() %></td>
-			<td align="center"><%=bBean.getContent() %></td>
 		</tr>
 		<%
 			}
@@ -51,12 +49,13 @@
 	</table>
 	<br>
 	<div align="center">
-		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='boardWriteForm.jsp'"><b style="color:white">글쓰기
-		</b></button>
+		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='Main.jsp?center=boardWriteForm.jsp'"><b style="color:white">글쓰기
+		</b></button>&nbsp;
 		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='memberJoinForm.jsp'"><b style="color:white">회원가입
-		</b></button>
+		</b></button>&nbsp;
 		<button style="background:black ;border-color:white ;border-radius:100px ;width:90px; height:30px;" type="button" onclick="location.href='Main.jsp'"><b style="color:white">홈으로
 		</b></button>
 	</div>
+	<br>
 </body>
 </html>

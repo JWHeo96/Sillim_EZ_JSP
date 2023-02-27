@@ -7,6 +7,6 @@
 <title>코베아</title>
 </head>
 <body>
-	<img src="./img/korea.jpg" alt="" width="500" height="300"/>
+	<iframe src="https://www.kovea.co.kr/ko/main" width="100%" height="500px"></iframe>
 </body>
 </html>

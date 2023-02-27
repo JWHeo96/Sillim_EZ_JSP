@@ -23,7 +23,7 @@
 				<font size="18px" color="white">이젠 낭만 캠프</font>
 			</td>
 			<td align="center" width="200" rowspan="2">
-				<b style="color:white;"><%=id %>님 반갑습니다.</b>
+				<b style="color:white;"><font size="6" color="red">"<%=id %>"</font>님 반갑습니다.</b><br><br>
 
 			<%
 				if(id.equals("GUEST")){
@@ -40,27 +40,27 @@
 		</tr>	
 	<!--  header상 위의 메뉴 선택하기 -->
 		<tr height="50px">
-			<td>
+			<td align="center">
 				<font size="4" color="white">
 					<a href="Main.jsp?center=tent.jsp" style="color:white; text-decoration:none;">텐트</a>
 				</font>
 			</td>
-			<td>
+			<td align="center">
 				<font size="4" color="white">
 					<a href="Main.jsp?center=sleep.jsp" style="color:white; text-decoration:none;">침낭</a>
 				</font>
 			</td>
-			<td>
+			<td align="center">
 				<font size="4" color="white">
 					<a href="Main.jsp?center=chair.jsp" style="color:white; text-decoration:none;">의자</a>
 				</font>
 			</td>
-			<td>
+			<td align="center">
 				<font size="4" color="white">
 					<a href="Main.jsp?center=table.jsp" style="color:white; text-decoration:none;">테이블</a>
 				</font>
 			</td>
-			<td>
+			<td align="center">
 				<font size="4" color="white">
 					<a href="Main.jsp?center=burner.jsp" style="color:white; text-decoration:none;">버너</a>
 				</font>

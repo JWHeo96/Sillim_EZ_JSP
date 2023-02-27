@@ -5,21 +5,16 @@
 <head>
 <meta charset="UTF-8">
 <link rel="icon" href="./img/favicon.png" />
-<style>
+<style type="text/css">
 	body{
 		background-color:black;
 	}
 	div {
 		position: relative;
 	}
-	a {
-		padding: 20px;
-		margin: 30px;
-	}
-	
-*{
-cursor: url(./img/cursor.cur), auto;
-}
+
+* {cursor: url(https://cur.cursors-4u.net/special/spe-3/spe302.ani), 
+url(https://cur.cursors-4u.net/special/spe-3/spe302.png), auto !important;}
 </style>
 <body>
  
@@ -43,7 +38,8 @@ cursor: url(./img/cursor.cur), auto;
 		}
 	%>
 	
-	<table border="1" align="center" style="width:800;" bordercolor="green" >
+	<table border="1" align="center" style="width:800;"
+	 bordercolor="green" >
 		<tr height="150">
 			<td align="center" colspan="2">
 				<jsp:include page="header.jsp"></jsp:include>

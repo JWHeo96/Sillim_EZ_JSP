@@ -9,23 +9,23 @@
 <body>
 
 	<table width="1000" bordercolor="green">
-		<tr align="center">
-			<td align="center" width="250">
+		<tr align="center" height="50">
+			<td align="center">
 				<font size="3px" color="white">
 					<a href="Main.jsp?center=email.jsp" style="text-decoration:none; color:red;">이메일무단수집거부</a>
 				</font>&nbsp;&nbsp;&nbsp;
 			</td>
-			<td align="center" width="250">
+			<td align="center">
 				<font size="3px" color="white">
 					<a href="Main.jsp?center=customer.jsp" style="text-decoration:none; color:red;">개인정보처리방침</a>
 				</font>&nbsp;&nbsp;&nbsp;
 			</td>
-			<td align="center" width="250">
+			<td align="center">
 				<font size="3px" color="white">
 					<a href="Main.jsp?center=sitemap.jsp" style="text-decoration:none; color:red;">사이트맵</a>
 				</font>&nbsp;&nbsp;&nbsp;
 			</td>
-			<td align="center" width="250">
+			<td align="center">
 				<font size="3px" color="white">
 					<a href="Main.jsp?center=support.jsp" style="text-decoration:none; color:red;">저작권정책</a>
 				</font>&nbsp;&nbsp;&nbsp;

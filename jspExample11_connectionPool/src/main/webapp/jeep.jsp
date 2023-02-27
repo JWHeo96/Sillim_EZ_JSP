@@ -7,6 +7,6 @@
 <title>지프</title>
 </head>
 <body>
-	<img src="./img/jeep.png" alt="" width="500" height="300"/>
+	<iframe src="https://www.jeep.co.kr/shopping_tools/incentive_offer.html" width="100%" height="500px"></iframe>
 </body>
 </html>

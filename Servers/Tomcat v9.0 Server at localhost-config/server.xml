@@ -60,13 +60,14 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8500
     -->
-    <Connector URIEncoding="UTF-8" connectionTimeout="20000" port="8500" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="8500" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
                port="8500" protocol="HTTP/1.1"
                connectionTimeout="20000"
-               redirectPort="8443" />
+               redirectPort="8443"
+	URIEncoding="UTF-8" />
     -->
     <!-- Define an SSL/TLS HTTP/1.1 Connector on port 8443
          This connector uses the NIO implementation. The default
@@ -151,7 +152,6 @@
              Documentation at: /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
-
       <Context  docBase="jspExample11_connectionPool" path="/jspExample11_connectionPool" reloadable="true" source="org.eclipse.jst.jee.server:jspExample11_connectionPool">
 		<Resource name="jdbc/OracleDB"
 				auth="Container"
@@ -163,8 +163,7 @@
 				url="jdbc:oracle:thin:@localhost:1521:xe"
 				maxActive="500"
 				maxIdle="100" />
-      </Context>
-      </Host>
+      </Context></Host>
     </Engine>
   </Service>
 </Server>

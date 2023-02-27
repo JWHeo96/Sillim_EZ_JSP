@@ -7,6 +7,6 @@
 <title>스노우피크</title>
 </head>
 <body>
-	<img src="./img/snowpeak.png" alt="" width="500" height="300"/>
+	<iframe src="https://www.snowpeak.co.kr/main.do" width="100%" height="500px"></iframe>
 </body>
 </html>
